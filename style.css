@@ -90,6 +90,7 @@ main {
 
 .text_subtitle {
     font-size: 25px;
+    font-weight: bold;
 }
 
 .text_nakami {
@@ -101,4 +102,26 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.dot-left, .dot-right {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #FFF8E8;
+    background-image: 
+        radial-gradient(circle, #DFA7A7 4px, transparent 5px),
+        radial-gradient(circle, #DFA7A7 4px, transparent 5px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    z-index: -1;
+}
+
+.dot-left {
+    left: 0;
+}
+
+.dot-right {
+    right: 0;
 }

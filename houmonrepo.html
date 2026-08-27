@@ -1,32 +1,46 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
+<html>
+	<head>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 		<Title>
-			訪問レポート | ボードゲームカフェを調査してみた！
+		8月26日　訪問レポート
 	</title>
-
+	<style>
+		body {
+			font-family: sans-serif;
+			background-color: #FFF8E8;
+		}
+		
+		
+		.dot-left,
+		.dot-right {
+			position: fixed;
+			top: 0;
+			width: 800px;
+			height: 100vh;
+			background-color: #FFF8E8;
+			background-image: 
+				radial-gradient(circle, #DFA7A7 4px, transparent 5px),
+				radial-gradient(circle, #DFA7A7 4px, transparent 5px);
+			background-size: 40px 40px;
+			background-position: 0 0, 20px 20px;
+			z-index: -1;
+		}
+		
+		.dot-left {
+			left: 0;
+		}
+		
+		.dot-right {
+			right: 0;
+		}
+	</style>
+	
+	
 </head>
 
-<body bgcolor="#FFF8E8">
-	<header>
-        <div class="header_container">
-            <font class="maintitle">訪問レポート</font>
-            <div class="page_links">
-                <a class="link_title" href="index.html">目的・客層</a>
-                <a class="link_title" href="2_history.html">歴史</a>
-                <a class="link_title" href="3_communication.html">コミュニケーション</a>
-                <a aclass="link_title" href="4_event.html">イベント</a>
-                <a class="link_title" href="5_nanioshita.html">何をしたか</a>
-                <a class="link_title" href="6_game.html">おすすめのゲーム</a>
-            </div>
-        </div>
-    </header>
-
+<body>
 	
 	<div class="dot-left"></div>
 	<div class="dot-right"></div>
@@ -318,9 +332,5 @@
 </div>
 </div>	
 		
-<footer>
-	<font>Webデザイン実践2班</font>
-</footer>
-
 </body>
 </html>
