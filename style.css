@@ -6,7 +6,8 @@ body {
  
 header {
     width: 100%;
-    margin: 25px auto;
+    margin: 0 auto;
+    padding: 3px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -16,7 +17,7 @@ header {
 .header_container {
     width: 95%;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 50px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +48,7 @@ main {
 
 .maintitle {
     font-family: 'Dela Gothic One', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
