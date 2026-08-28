@@ -2,6 +2,8 @@ body {
     font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
     width: 100%;
     margin: 0 auto;
+    background-color: #FCF8F2;
+    color: #5C544D;
 }
  
 header {
@@ -36,12 +38,13 @@ footer {
     margin: 0 auto;
     padding: 15px 0;
     font-weight: bold;
+    color: #9C4B24;
 }
 
 main {
     margin: 0 auto;
     width:95%;
-    background-color: #f5f5f5;
+    background-color: transparent;
     padding: 20px;
     min-height: 1500px;
 }
@@ -50,6 +53,7 @@ main {
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    color: #9C4B24;
 }
 
 .item {
@@ -65,7 +69,7 @@ main {
     width: 30%;
     justify-content: space-between;
     min-height: 300px;
-    background-color: #C0C0C0;
+    background-color: transparent;
     flex-direction: column;
     gap: 25px;
     text-align: center;
@@ -85,12 +89,13 @@ main {
     min-height: 300px;
     margin:0 ;
     padding: 10px;
-    background-color: #C0C0C0;
+    background-color: transparent;
 }
 
 .text_subtitle {
     font-size: 25px;
     font-weight: bold;
+    color: #9C4B24;
 }
 
 .text_nakami {
@@ -124,4 +129,8 @@ main {
 
 .dot-right {
     right: 0;
+}
+
+.page_links a, a {
+    color: #9C4B24;
 }
