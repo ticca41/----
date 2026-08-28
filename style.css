@@ -29,6 +29,30 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 25px;
+    font-weight: bold;
+}
+
+.link_title {
+    text-decoration: none;
+    position: relative;
+}
+
+.link_title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #9C4B24;
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.link_title:hover::after {
+    transform: scaleX(1);
 }
 
 footer {
@@ -39,6 +63,25 @@ footer {
     padding: 15px 0;
     font-weight: bold;
     color: #9C4B24;
+}
+
+.footer_container {
+    width: 100%;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns {
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+
+.link_icon {
+    width: 50px;
+    height: auto;
 }
 
 main {
@@ -133,4 +176,61 @@ main {
 
 .page_links a, a {
     color: #9C4B24;
+}
+
+/* --- 6_game.html 用の追加スタイル --- */
+.game6_container {
+    position: relative;
+    flex-direction: column; 
+    gap: 20px; 
+    z-index: 1; 
+}
+
+.game6_container font {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: 20px;
+}
+
+.game6_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/6_game/haikei.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.game_text {
+    font-size: 17px;
+    color: #5C544D; 
+    line-height: 1.8; 
+    margin: 10px 0;
+}
+
+/* --- テーブル --- */
+
+table {
+    border-collapse: collapse; 
+    background-color: #FFFFFF;
+    margin: 0 auto; 
+    width: 80%;
+    color: #5C544D; 
+}
+
+th, td {
+    border: 1px solid #C4B5A5;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #F2E8D8; 
+    color: #9C4B24;
+    font-weight: bold;
 }
